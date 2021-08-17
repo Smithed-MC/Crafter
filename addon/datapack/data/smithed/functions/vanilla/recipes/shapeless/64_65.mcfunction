@@ -1,0 +1,2 @@
+execute store result score @s smd.data if entity @s[scores={smd.data=0}] if score count smd.data matches 1 if data storage smd:crafter root.temp{shapeless_crafting_input:[{id:"minecraft:iron_ingot"}]} run item replace block ~ ~ ~ container.16 with minecraft:iron_nugget 9
+execute store result score @s smd.data if entity @s[scores={smd.data=0}] if score count smd.data matches 1 if data storage smd:crafter root.temp{shapeless_crafting_input:[{id:"minecraft:jungle_planks"}]} run item replace block ~ ~ ~ container.16 with minecraft:jungle_button 1

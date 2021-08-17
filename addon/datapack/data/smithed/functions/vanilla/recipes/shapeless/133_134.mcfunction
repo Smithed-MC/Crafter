@@ -1,0 +1,2 @@
+execute store result score @s smd.data if entity @s[scores={smd.data=0}] if score count smd.data matches 1 if data storage smd:crafter root.temp{shapeless_crafting_input:[{id:"minecraft:raw_copper_block"}]} run item replace block ~ ~ ~ container.16 with minecraft:raw_copper 9
+execute store result score @s smd.data if entity @s[scores={smd.data=0}] if score count smd.data matches 1 if data storage smd:crafter root.temp{shapeless_crafting_input:[{id:"minecraft:raw_gold_block"}]} run item replace block ~ ~ ~ container.16 with minecraft:raw_gold 9

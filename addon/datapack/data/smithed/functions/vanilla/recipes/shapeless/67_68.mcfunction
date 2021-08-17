@@ -1,0 +1,2 @@
+execute store result score @s smd.data if entity @s[scores={smd.data=0}] if score count smd.data matches 1 if data storage smd:crafter root.temp{shapeless_crafting_input:[{id:"minecraft:lapis_block"}]} run item replace block ~ ~ ~ container.16 with minecraft:lapis_lazuli 9
+execute store result score @s smd.data if entity @s[scores={smd.data=0}] if score count smd.data matches 2 if data storage smd:crafter root.temp{shapeless_crafting_input:[{id:"minecraft:white_bed"},{id:"minecraft:light_blue_dye"}]} run item replace block ~ ~ ~ container.16 with minecraft:light_blue_bed 1
