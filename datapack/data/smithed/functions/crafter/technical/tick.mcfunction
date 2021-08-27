@@ -1,1 +1,0 @@
-execute as @e[tag=smd.crafter,type=armor_stand] at @s run function smithed:crafter/block/table/tick

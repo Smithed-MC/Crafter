@@ -1,5 +1,5 @@
 ####################
-# Commands to tick tag=!smdntology table when it is open
+# Commands to tick tag=!smd.crafter when it is open
 ####################
 
 # If there are any items in improper slots, manage them
