@@ -1,11 +1,12 @@
-data modify storage smd:crafter root.temp.shapeless_crafting_input set from storage smd:crafter root.temp.crafting_input.0
-data modify storage smd:crafter root.temp.shapeless_crafting_input append from storage smd:crafter root.temp.crafting_input.1[]
-data modify storage smd:crafter root.temp.shapeless_crafting_input append from storage smd:crafter root.temp.crafting_input.2[]
+data modify storage smd:crafter root.temp.shapeless_crafting_input set value []
+execute if data block ~ ~ ~ Items[{Slot:2b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:2b}]
+execute if data block ~ ~ ~ Items[{Slot:3b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:3b}]
+execute if data block ~ ~ ~ Items[{Slot:4b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:4b}]
+execute if data block ~ ~ ~ Items[{Slot:11b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:11b}]
+execute if data block ~ ~ ~ Items[{Slot:12b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:12b}]
+execute if data block ~ ~ ~ Items[{Slot:13b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:13b}]
+execute if data block ~ ~ ~ Items[{Slot:20b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:20b}]
+execute if data block ~ ~ ~ Items[{Slot:21b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:21b}]
+execute if data block ~ ~ ~ Items[{Slot:22b}] run data modify storage smd:crafter root.temp.shapeless_crafting_input append from block ~ ~ ~ Items[{Slot:22b}]
 
-scoreboard players set $temp smd.data 0
-execute store result score $temp smd.data if data storage smd:crafter root.temp.shapeless_crafting_input[]
-
-data modify storage smd:crafter root.temp.simplified set value []
-function smithed:crafter/block/table/crafting/shapeless_recipes/loop
-
-data modify storage smd:crafter root.temp.shapeless_crafting_input set from storage smd:crafter root.temp.simplified
+execute if data storage smd:crafter root.temp.shapeless_crafting_input[] run function smithed:crafter/block/table/crafting/shapeless_recipes/main
