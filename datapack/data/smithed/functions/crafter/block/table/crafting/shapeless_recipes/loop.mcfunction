@@ -18,6 +18,6 @@ execute if score $temp4 smd.data matches 7.. if score $temp1 smd.data matches 1 
 execute if score $temp4 smd.data matches 8.. if score $temp1 smd.data matches 1 run function smithed:crafter/block/table/crafting/shapeless_recipes/checks/7
 execute if score $temp4 smd.data matches 9.. if score $temp1 smd.data matches 1 run function smithed:crafter/block/table/crafting/shapeless_recipes/checks/8
 
-execute if score $temp1 smd.data matches 1 run function smithed:crafter/block/table/crafting/shapeless_recipes/append
+execute if score $temp1 smd.data matches 1 unless data storage smd:crafter root.temp.a{id:"minecraft:air"} run function smithed:crafter/block/table/crafting/shapeless_recipes/append
 
 execute if data storage smd:crafter root.temp.shapeless_crafting_input[] run function smithed:crafter/block/table/crafting/shapeless_recipes/loop

@@ -71,3 +71,4 @@ execute if predicate smithed:crafter/block/table/tags/wooden_trapdoors run data 
 execute if predicate smithed:crafter/block/table/tags/wool run data modify storage smd:crafter root.temp.item_tag append value "#minecraft:wool"
 
 function #smithed:crafter/query_tags
+
