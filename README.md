@@ -1,3 +1,4 @@
-This pack functions as a library for custom crafting!
-<hr/>
-hi
+![](https://github.com/TheNuclearNexus/smithed/blob/master/public/official_smithed_library.png?raw=true)
+
+**Smithed Crafter** serves as the end users all in one crafting table! No more having 89 different crafting blocks in your base!
+
