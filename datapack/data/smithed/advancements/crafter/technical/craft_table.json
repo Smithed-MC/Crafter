@@ -8,7 +8,7 @@
     }
   },
   "rewards": {
-    "function": "smithed:crafter/block/table/craft",
+    "function": "smithed:crafter/zint/technical/craft_table",
     "loot": [
       "smithed:crafter/blocks/table"
     ]

@@ -30,6 +30,6 @@ for f in tags:
     )
     file.close()
 
-    functionFile.write(f'execute if predicate smithed:crafter/block/table/tags/{f} run data modify storage smd:crafter root.temp.item_tag append value "#minecraft:{f}"\n')
+    functionFile.write(f'execute if predicate smithed:crafter/impl/v0_0_1/block/table/tags/{f} run data modify storage smd:crafter root.temp.item_tag append value "#minecraft:{f}"\n')
 functionFile.write(f'\nfunction #smithed:crafter/query_tags')
     

@@ -1,1 +1,0 @@
-execute if data storage smd:core {blockApi:{id:"smithed:crafter"}} run function smithed:crafter/block/table/place

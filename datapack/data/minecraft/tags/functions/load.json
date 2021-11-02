@@ -1,5 +1,5 @@
 {
-    "values":[
-        "smithed:crafter/technical/load"
+    "values": [
+        "#load:_private/load"
     ]
 }
