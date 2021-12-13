@@ -46,10 +46,18 @@ jobs:
           key-path: '["version"]'
           
           
-      - name: Upload artifact
+      - name: Upload DP artifact
         uses: actions/upload-artifact@v2.3.0
         with:
           # Artifact name
-          name: Smithed Core [Nightly v${{steps.yaml.outputs.data}}]
+          name: Smithed Crafter [Nightly v${{steps.yaml.outputs.data}}]
           # A file, directory or wildcard pattern that describes what to upload
-          path: out/Smithed Core
+          path: out/Smithed Crafter
+
+      - name: Upload RP artifact
+        uses: actions/upload-artifact@v2.3.0
+        with:
+          # Artifact name
+          name: Smithed Crafter RP [Nightly v${{steps.yaml.outputs.data}}]
+          # A file, directory or wildcard pattern that describes what to upload
+          path: out/Smithed Crafter RP
