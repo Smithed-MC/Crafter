@@ -1,6 +1,5 @@
 {
     "values": [
-        "#smithed:crafter/pub/technical/enumerate",
-        "#smithed:crafter/pub/technical/resolve"
+        "#smithed:crafter/load"
     ]
 }

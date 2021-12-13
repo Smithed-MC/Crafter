@@ -1,2 +1,2 @@
-execute if score @s smd.data matches 0 run function smithed:vanilla/recipes/shapeless/98_99
-execute if score @s smd.data matches 0 run function smithed:vanilla/recipes/shapeless/100_100
+execute if score @s smithed.data matches 0 run function smithed:vanilla/recipes/shapeless/98_99
+execute if score @s smithed.data matches 0 run function smithed:vanilla/recipes/shapeless/100_100

@@ -1,2 +1,2 @@
-execute if score @s smd.data matches 0 run function smithed:vanilla/recipes/shaped/9_12
-execute if score @s smd.data matches 0 run function smithed:vanilla/recipes/shaped/13_16
+execute if score @s smithed.data matches 0 run function smithed:vanilla/recipes/shaped/9_12
+execute if score @s smithed.data matches 0 run function smithed:vanilla/recipes/shaped/13_16
