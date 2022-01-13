@@ -21,8 +21,12 @@ output: out
 require:
   - plugins.versioning
   - beet.contrib.dundervar
+  - mecha
 
 
 meta:
   mecha:
     keep_comments: true
+  versioning:
+    key: '#smithed.crafter'
+    root: smithed:crafter
